@@ -1,16 +1,59 @@
 <!DOCTYPE html>
-
-<html>
-
+<html lang="en">
 <head>
-	<link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Details Table</title>
+    <style>
+        /* Styles for the table */
+		table {
+			background-color: yellow; /* Sets the table background color to yellow */
+			border-collapse: collapse; /* Ensures that borders between table cells are merged */
+			width: 100%; /* Makes the table span the full width of its container */
+		}
+		/* Styles for table headers and cells */
+		th, td {
+			border: 1px solid black; /* Adds a black border of 1px thickness to each cell */
+			padding: 8px; /* Adds padding inside the cells */
+			text-align: left; /* Aligns the text to the left inside the cells */
+		}
+		/* Styles specifically for table headers */
+		th {
+			background-color: #f2f2f2; /* Gives the headers a light gray background */
+		}
+    </style>
 </head>
-
 <body>
-	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
-</script>
-
+    <table>
+        <caption>Student Details</caption>
+        <!-- thead -> table header containing columns names -->
+        <thead>
+            <tr>
+                <th>NAME</th>
+                <th>AGE</th>
+                <th>BRANCH</th>
+            </tr>
+        </thead>
+        <!-- table body containing student data -->
+         <tbody>
+            <tr>
+                <td>Jhon Doe</td>
+                <td>20</td>
+                <td>Computer Science</td>
+            </tr>
+            <tr>
+                <td>Jane Smith</td> <!-- Name of the second student -->
+				<td>22</td> <!-- Age of the second student -->
+				<td>Electrical Engineering</td>
+            </tr>
+            <tr>
+				<td>Robert Brown</td> <!-- Name of the third student -->
+				<td>21</td> <!-- Age of the third student -->
+				<td>Mechanical Engineering</td> <!-- Branch of the third student -->
+			</tr>
+         </tbody>
+    </table>
+    <!-- Link to an external JavaScript file -->
+	<script type="text/javascript" src="./script.js"></script>
 </body>
-
 </html>
